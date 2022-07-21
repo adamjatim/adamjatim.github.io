@@ -46,7 +46,7 @@ header > h1 {
     font-size: 1.25em;
     font-weight: bold;
     border-radius: 1em;
-    background-color: #0a1128;
+    background-color: #23153C;
     padding: 0.3em 0.6em;
     border: 2.5px solid ;
     color: #fefcfb;
@@ -63,7 +63,7 @@ header > h1 {
 }
 
 .container > div.button {
-    background-color: blue;
+    background-color: #23153C;
     border-radius: 10em;
     padding: 1em;   
     margin: 2.5em 0;
@@ -71,8 +71,16 @@ header > h1 {
 }
 
 .container > div.button:hover {
-    color: #0a1128;
     background-color: #fefcfb;
+    background-image: url();
+}
+
+.container > div.button:hover > a {
+    color: #23153C;
+}
+
+.container > div.button:hover > a > img {
+    background-image: url(./img/icons8-facebook-dark.svg);
 }
 
 @media all and (max-width: 30em){
