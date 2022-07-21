@@ -54,7 +54,7 @@ header > h1 {
     border: 2.5px solid ;
     color: #fefcfb;
     backdrop-filter: blur(10px) saturate(160%) contrast(180%);
-  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
 }
 
 .container {
@@ -65,16 +65,27 @@ header > h1 {
     max-width: 480px;
 }
 
-.container > .text {
-    background-color: #23153C;
-    backdrop-filter: blur(20px) saturate(100%);
+.container > div.button {
+    background-color: #0a1128;
     border-radius: 10em;
-    padding: 1em;
+    padding: 1em;   
     margin: 2.5em 0;
     border: 2.5px solid #fefcfb;
 }
 
-.container > .text > a {
+.container > div.button:hover {
+    color: #0a1128;
+    background-color: #fefcfb;
+}
+
+@media all and (max-width: 30em){
+    .container > div.button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+.container > div.button > a {
     color: #fefcfb;
     text-decoration: none;
     display: flex;
