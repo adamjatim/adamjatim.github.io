@@ -63,7 +63,7 @@ header > h1 {
 }
 
 .container > div.button {
-    background-color: #0a1128;
+    background-color: blue;
     border-radius: 10em;
     padding: 1em;   
     margin: 2.5em 0;
