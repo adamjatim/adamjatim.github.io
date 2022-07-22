@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +22,7 @@ main {
     opacity: 0;
     filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
-    width:auto;
+    columns: auto-fill;
     height:fit-content;
 }
 
@@ -60,6 +62,8 @@ header > h1 {
     margin: 0 auto;
     padding: 4em;
     max-width: 420px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container > div.button {
@@ -79,15 +83,16 @@ header > h1 {
     color: #23153C;
 }
 
-.container > div.button:hover > a > img {
-    background-image: url(./img/icons8-facebook-dark.svg);
+.container > div.button:hover > a > img.icon-fb {
+    content: url(./img/icons8-facebook-dark.svg);
 }
 
-@media all and (max-width: 30em){
-    .container > div.button {
-        display: block;
-        margin: 0.4em auto;
-    }
+.container > div.button:hover > a > img.icon-git {
+    content: url(./img/icons8-github-dark.svg);
+}
+
+.container > div.button:hover > a > img.icon-ig {
+    content : url(./img/icons8-instagram-dark.svg);
 }
 
 .container > div.button > a {
