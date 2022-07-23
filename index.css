@@ -67,7 +67,11 @@ header > h1 {
     height: auto;  
 }
 
-.container > div.button {
+.container > a {
+
+}
+
+.container > a > div.button {
     background-color: #23153C;
     border-radius: 10em;
     padding: 1em;   
@@ -75,24 +79,24 @@ header > h1 {
     border: 2.5px solid #fefcfb;
 }
 
-.container > div.button:hover {
+.container > a > div.button:hover {
     background-color: #fefcfb;
     color: #23153C;
 }
 
-.container > div.button:hover > img.icon-fb {
+.container > a > div.button:hover > img.icon-fb {
     content: url(./img/icons8-facebook-dark.svg);
 }
 
-.container > div.button:hover > img.icon-git {
+.container > a > div.button:hover > img.icon-git {
     content: url(./img/icons8-github-dark.svg);
 }
 
-.container > div.button:hover > img.icon-ig {
+.container > a > div.button:hover > img.icon-ig {
     content : url(./img/icons8-instagram-dark.svg);
 }
 
-.container > div.button {
+.container > a > div.button {
     color: #fefcfb;
     text-decoration: none;
     font-size: medium;
