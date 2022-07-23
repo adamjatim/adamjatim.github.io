@@ -1,8 +1,11 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    position:relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,12 +21,12 @@ body, html {
 }
 
 main {
-    position:static;
+    position:relative;
     opacity: 0;
     filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
-    columns: auto-fill;
-    height:fit-content;
+    height: auto;
+    width: auto;
 }
 
 header {
@@ -39,13 +42,13 @@ header > img {
     height: 10em;
     border-radius: 100%;
     border: 2.5px solid #fefcfb;
-    box-shadow: #FF3F81  0px 0px 100px 10px;
+    box-shadow: #FF3F81  0px 0px 150px 0.001px;
     flex: auto;
 }
 
 header > h1 {
     display: inline-block;
-    font-size: 1.25em;
+    font-size:medium;
     font-weight: bold;
     border-radius: 1em;
     background-color: #23153C;
@@ -59,11 +62,11 @@ header > h1 {
 .container {
     box-sizing: border-box;
     list-style: none;
-    margin: 0 auto;
+    margin: auto;
     padding: 4em;
     max-width: 420px;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;  
 }
 
 .container > div.button {
@@ -98,9 +101,17 @@ header > h1 {
 .container > div.button > a {
     color: #fefcfb;
     text-decoration: none;
+    font-size: medium;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
+}
+
+@media screen and (max-width: 1080px) and (max-heigth: 2400px){
+    header > img {
+        width: 25em;
+        height: 25em;
+    }
 }
