@@ -52,9 +52,7 @@ header > h1 {
     background-color: #23153C;
     padding: 0.3em 0.6em;
     border: 2.5px solid ;
-    color: #fefcfb;
-    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    color: #fefcfb; 
 }
 
 .container {
@@ -68,7 +66,7 @@ header > h1 {
 }
 
 .container > a {
-
+    text-decoration: none;
 }
 
 .container > a > div.button {
@@ -98,7 +96,6 @@ header > h1 {
 
 .container > a > div.button {
     color: #fefcfb;
-    text-decoration: none;
     font-size: medium;
     display: flex;
     flex-direction: row;
