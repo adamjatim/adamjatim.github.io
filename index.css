@@ -25,8 +25,6 @@ main {
     opacity: 0;
     filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
-    height: auto;
-    width: auto;
 }
 
 header {
@@ -79,26 +77,22 @@ header > h1 {
 
 .container > div.button:hover {
     background-color: #fefcfb;
-    background-image: url();
-}
-
-.container > div.button:hover > a {
     color: #23153C;
 }
 
-.container > div.button:hover > a > img.icon-fb {
+.container > div.button:hover > img.icon-fb {
     content: url(./img/icons8-facebook-dark.svg);
 }
 
-.container > div.button:hover > a > img.icon-git {
+.container > div.button:hover > img.icon-git {
     content: url(./img/icons8-github-dark.svg);
 }
 
-.container > div.button:hover > a > img.icon-ig {
+.container > div.button:hover > img.icon-ig {
     content : url(./img/icons8-instagram-dark.svg);
 }
 
-.container > div.button > a {
+.container > div.button {
     color: #fefcfb;
     text-decoration: none;
     font-size: medium;
@@ -109,9 +103,8 @@ header > h1 {
     gap: 0.5em;
 }
 
-@media screen and (max-width: 1080px) and (max-heigth: 2400px){
-    header > img {
-        width: 25em;
-        height: 25em;
-    }
-}
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
