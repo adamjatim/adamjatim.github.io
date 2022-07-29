@@ -1,4 +1,4 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
     position:relative;
@@ -6,7 +6,8 @@ body, html {
     bottom: 0;
     left: 0;
     right: 0;   
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+    text-decoration: none;
 }
 
 #vanta {
@@ -22,13 +23,63 @@ body, html {
 
 main {
     position:relative;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
 }
 
+nav {
+    height: 48px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #23153c81;
+    
+    
+}
+
+.navbarBrand {
+    color: #FF3F81;
+    font-family: Caveat;
+    font-weight: 600;
+    font-size: 36px;
+    display: flex;
+    padding-left: 4%;
+    justify-content: space-between;
+}
+
+.navbarBrand:hover {
+    color: #fefcfb;
+}
+
+.navbarContent {
+    display: flex;
+    float: right;
+    padding-right: 4%;
+    justify-content: space-between;
+}
+
+.navbarHidden {
+    flex-direction: row;
+    margin: 0 5px;
+    
+}
+
+.navbarButton {
+    color: #fefcfb;
+    display: inline-block;
+    padding: 7px 13px;
+    font-size: medium;
+    font-weight: 500;
+}
+
 header {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -41,7 +92,6 @@ header > img {
     height: 10em;
     border-radius: 100%;
     border: 2.5px solid #fefcfb;
-    box-shadow: #FF3F81  0px 0px 150px 0.001px;
     flex: auto;
 }
 
@@ -66,36 +116,12 @@ header > h1 {
     height: auto;  
 }
 
-.container > a {
-    text-decoration: none;
-}
-
 .container > a > div.button {
     background-color: #23153C;
     border-radius: 10em;
     padding: 1em;   
     margin: 2.5em 0;
     border: 2.5px solid #fefcfb;
-}
-
-.container > a > div.button:hover {
-    background-color: #fefcfb;
-    color: #23153C;
-}
-
-.container > a > div.button:hover > img.icon-fb {
-    content: url(./img/icons8-facebook-dark.svg);
-}
-
-.container > a > div.button:hover > img.icon-git {
-    content: url(./img/icons8-github-dark.svg);
-}
-
-.container > a > div.button:hover > img.icon-ig {
-    content : url(./img/icons8-instagram-dark.svg);
-}
-
-.container > a > div.button {
     color: #fefcfb;
     font-size: medium;
     display: flex;
@@ -105,3 +131,19 @@ header > h1 {
     gap: 0.5em;
 }
 
+.container > a > div.button:hover {
+    background-color: #fefcfb;
+    color: #23153C;
+}
+
+.container > a > div.button:hover > img.icon-fb {
+    content: url(./img/iconFacebookDark.svg);
+}
+
+.container > a > div.button:hover > img.icon-git {
+    content: url(./img/iconGithubDark.svg);
+}
+
+.container > a > div.button:hover > img.icon-ig {
+    content : url(./img/iconInstagramDark.svg);
+}
