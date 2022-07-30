@@ -64,7 +64,7 @@ nav {
 
 .navbarHidden {
     flex-direction: row;
-    margin: 0 5px;
+    margin: 0 10px;
     
 }
 
@@ -84,6 +84,12 @@ nav {
 .navbarButton.Active {
     font-size: 1.2em; 
     font-weight: 600;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -127,6 +133,7 @@ header > h1 {
 .container > a > div.button {
     background-color: #23153C;
     border-radius: 10em;
+    width: 200px;
     padding: 1em;   
     margin: 2.5em 0;
     border: 2.5px solid #fefcfb;
@@ -154,4 +161,23 @@ header > h1 {
 
 .container > a > div.button:hover > img.icon-ig {
     content : url(./img/iconInstagramDark.svg);
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    position: fixed;
+    padding-bottom: 2px;
+    bottom: 0px;
+    height: 48px;
+    width: 100%;
+
+    justify-content: space-around;
+    background-color: black;
+}
+
+footer > p {
+    font-size: small;
+    font-weight: 100;
+    color: #fefcfb;
 }
