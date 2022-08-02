@@ -112,8 +112,8 @@ header {
 }
 
 header > img {
-    width: 10em;
-    height: 10em;
+    width: 15em;
+    height: 15em;
     border-radius: 100%;
     border: 2.5px solid #fefcfb;
     flex: auto;
