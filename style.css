@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 500px) {
     #vanta {
-        width: 150%;
+        width: 500%;
     }
 }
 
@@ -45,7 +45,7 @@ nav {
     margin: 0%;
     padding-top: 2px;
     padding-bottom: 2px;
-    background-color: #23153c81;
+    background-color: #23153cb4;
 }
 
 .navbarBrand {
@@ -91,32 +91,23 @@ nav {
     gap: 20%;
 }
 
-header {
-    margin-top: 5%;
-    text-align: center;
+.aboutContent {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-header > img {
-    width: 15em;
+    flex-direction: row;
     height: 15em;
-    border-radius: 100%;
-    border: 2.5px solid #fefcfb;
-    flex: auto;
-}
-
-header > h1 {
-    display: inline-block;
     font-size:medium;
     font-weight: bold;
-    border-radius: 1em;
-    background-color: #23153C;
-    padding: 0.3em 0.6em;
+    border-radius: 10em;
+    background-color: #443068e3;
     border: 2.5px solid ;
     color: #fefcfb; 
+}
+
+.aboutContent img {
+    width: 12em;
+    height: 12em;
+    border-radius: 100%;
+    border: 2.5px solid #fefcfb;
 }
 
 .container {
