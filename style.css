@@ -21,7 +21,7 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #vanta {
         width: 200%;
     }
@@ -101,7 +101,7 @@ nav {
     font-size:medium;
     font-weight: bold;
     border-radius: 10em;
-    background-color: #443068e3;
+    background-color: #443068d0;
     border: 2.5px solid ;
     color: #fefcfb; 
 }
@@ -126,6 +126,32 @@ nav {
     margin: auto; 
     margin-right: 5%;
     margin-left: 5%;
+}
+
+@media screen and (max-width: 900px){
+    .aboutContent {
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        width: 20em;
+    }
+
+    .aboutContent img {
+        margin-left:auto;
+        margin-top: 5vh;
+        width: 15em;
+        height: 15em;
+    }
+
+    .aboutContent p {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20%;
+        padding-top: 10%;
+    }
 }
 
 .container {
