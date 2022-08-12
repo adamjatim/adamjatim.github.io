@@ -1,9 +1,9 @@
-function showNavbar(){
-    var x = document.getElementById("navbar");
-    if(x.className === "navbarContent"){
-        x.className += " responsive";
+function expansion() {
+    var x = document.getElementById("myNavbarContent");
+    if (x.className === "navbarContent") {
+        x.className += " active";
     }
     else {
-        x.className = "navbarContent";
+        x.className =  "navbarContent";
     }
 }
