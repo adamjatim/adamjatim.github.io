@@ -1,3 +1,5 @@
+/* main style */
+
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +37,8 @@ main {
     filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
 }
+
+/* navbar style */
 
 nav {
     height: 48px;
@@ -74,14 +78,17 @@ nav {
     margin-left: 10px;
     font-size: 1em;
     font-weight: 400;
+    padding-bottom: 4px;
 }
 
 .navbarButton:hover {
     color: #FF3F81;
+    border-bottom: #fefcfb 2px solid;
 }
 
 .Active {
     font-weight: 600;
+    border-bottom: #fefcfb 2px solid;
 }
 
 .navbarContent .icon {
@@ -114,12 +121,40 @@ nav {
     }
 }
 
+/* content style */
+
 .content {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20%;
 }
+
+/* content style home */
+
+.homeContent {
+    margin-top: 40vh;
+}
+
+.homeContent h1 {
+    display: flex; 
+    justify-content:center; 
+    justify-items: center; 
+    color: #fefcfb; 
+    font-size: 32px; 
+    font-weight: bolder;
+}
+
+.homeContent p {
+    display: flex; 
+    justify-content:center; 
+    justify-items: center; 
+    color: #fefcfb; 
+    font-size: 26px; 
+    font-weight: normal;
+}
+
+/* content style about */
 
 .aboutContent {
     display: flex;
@@ -184,6 +219,10 @@ nav {
     }
 }
 
+/* content style works */
+
+/* content style contact */
+
 .container {
     box-sizing: border-box;
     list-style: none;
@@ -226,6 +265,8 @@ nav {
 .container > a > div.button:hover > img.icon-ig {
     content : url(./img/iconInstagramDark.svg);
 }
+
+/* footer style */
 
 footer {
     display: flex;
