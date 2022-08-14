@@ -84,6 +84,36 @@ nav {
     font-weight: 600;
 }
 
+.navbarContent .icon {
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .navbarContent a {display: none;}
+    .navbarContent .icon {
+        display: block;
+        float: right;
+        color: #fefcfb;
+        
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbarContent.active {position: relative;}
+
+    .navbarContent.active a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+
+    .navbarContent.active a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
 .content {
     min-height: 100vh;
     display: flex;
