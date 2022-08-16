@@ -41,6 +41,7 @@ main {
 /* navbar style */
 
 nav {
+    z-index: 2;
     height: 48px;
     width: 100%;
     display:flex;
@@ -49,7 +50,7 @@ nav {
     margin: 0%;
     padding-top: 2px;
     padding-bottom: 2px;
-    background-color: #23153cb4;
+    background-color: #190a32;
 }
 
 .navbarBrand {
@@ -64,7 +65,7 @@ nav {
 
 .navbarBrand:hover {
     color: #fefcfb;
-}
+}   
 
 .navbarContent {
     float: right;
@@ -73,52 +74,29 @@ nav {
 }
 
 .navbarButton {
-    color: #fefcfb;
+    color: #fefcfbab;
     margin-right: 10px;
     margin-left: 10px;
     font-size: 1em;
     font-weight: 400;
-    padding-bottom: 4px;
+    padding-bottom: 11px;
 }
 
 .navbarButton:hover {
-    color: #FF3F81;
-    border-bottom: #fefcfb 2px solid;
+    color: #fefcfb;
+    border-bottom: #fefcfb 3px solid;
 }
 
 .Active {
     font-weight: 600;
-    border-bottom: #fefcfb 2px solid;
+    color: #fefcfb;
+    border-bottom: #fefcfbab 3px solid;
 }
 
-.navbarContent .icon {
-    display: none;
-}
-
-@media screen and (max-width: 500px){
-    .navbarContent a {display: none;}
-    .navbarContent .icon {
-        display: block;
-        float: right;
-        color: #fefcfb;
-        
-    }
-}
-
-@media screen and (max-width: 500px){
-    .navbarContent.active {position: relative;}
-
-    .navbarContent.active a {
-        float: none;
-        display: block;
-        text-align: right;
-    }
-
-    .navbarContent.active a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+.hamburger:hover span:nth-child(1),
+.hamburger:hover span:nth-child(2),
+.hamburger:hover span:nth-child(3) {
+    color: #fefcfb
 }
 
 /* content style */
@@ -127,14 +105,12 @@ nav {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-items: center;
     gap: 20%;
 }
 
 /* content style home */
-
-.homeContent {
-    margin-top: 40vh;
-}
 
 .homeContent h1 {
     display: flex; 
@@ -157,9 +133,10 @@ nav {
 /* content style about */
 
 .aboutContent {
+    justify-content: center;
+    justify-items: center;
     display: flex;
     flex-direction: row;
-    margin-top: 30vh; 
     margin-left: 20vh; 
     margin-right: 20vh; 
     height: 15em;
@@ -220,6 +197,8 @@ nav {
 }
 
 /* content style works */
+
+
 
 /* content style contact */
 
