@@ -1,9 +1,7 @@
-function expansion() {
-    var x = document.getElementById("myNavbarContent");
-    if (x.className === "navbarContent") {
-        x.className += " active";
-    }
-    else {
-        x.className =  "navbarContent";
-    }
-}
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobileNavbar');
+
+hamburger.addEventListener('click', function ()  {
+    mobileMenu.classList.toggle('is-active');
+    this.classList.toggle('is-active'); // hamburger
+});
