@@ -87,7 +87,7 @@ main {
     border-bottom: #fefcfb 3px solid;
 }
 
-.Active {
+.navbarButton.Active {
     font-weight: 600;
     color: #fefcfb;
     border-bottom: #fefcfbab 3px solid;
@@ -232,6 +232,7 @@ main {
     justify-items: center;
     align-items: center;
     margin: auto;
+    margin-left: 2em;
 }
 
 .aboutContent p {
@@ -278,22 +279,24 @@ main {
 
 /* content style contact */
 
-.contentContact {
-    
+.contanctContent {
+    display: flex;
+    flex-direction: column;
 }
 
-.contentContact p {
-    display:flex; 
+.contanctContent p {
     color: #fefcfb; 
-    font-size: 1.5em; 
+    font-size: 2.1em; 
     align-items: center;  
     justify-content: center; 
     margin: auto;
+    margin-top: 2em;
+    margin-bottom: 3em;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box;
     margin: auto;
     width: auto;
@@ -303,9 +306,11 @@ main {
 .container > a > div.button {
     background-color: #23153C;
     border-radius: 10em;
-    width: 200px;
+    width: 150px;
     padding: 1em;   
-    margin: 2.5em 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 7em;
     border: 2.5px solid #fefcfb;
     color: #fefcfb;
     font-size: medium;  
@@ -313,7 +318,19 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+}
+
+@media screen and (max-width: 768px ){
+    .contanctContent p {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
 }
 
 .container > a > div.button:hover {
