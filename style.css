@@ -229,8 +229,9 @@ main {
     border-radius: 100%;
     border: 2.5px solid #fefcfb;
     justify-content: center; 
-    margin: auto; 
-    margin-left: 5%;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
 }
 
 .aboutContent p {
@@ -277,12 +278,24 @@ main {
 
 /* content style contact */
 
-.container {
-    box-sizing: border-box;
-    list-style: none;
-    margin: auto;
+.contentContact {
     
-    max-width: 420px;
+}
+
+.contentContact p {
+    display:flex; 
+    color: #fefcfb; 
+    font-size: 1.5em; 
+    align-items: center;  
+    justify-content: center; 
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
     width: auto;
     height: auto;  
 }
@@ -295,7 +308,7 @@ main {
     margin: 2.5em 0;
     border: 2.5px solid #fefcfb;
     color: #fefcfb;
-    font-size: medium;
+    font-size: medium;  
     display: flex;
     flex-direction: row;
     justify-content: center;
