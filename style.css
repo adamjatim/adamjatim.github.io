@@ -303,7 +303,7 @@ main {
     height: auto;  
 }
 
-.container > a > div.button {
+.container > a > .button {
     background-color: #23153C;
     border-radius: 10em;
     width: 150px;
@@ -331,6 +331,10 @@ main {
         margin-top: 3em;
         margin-bottom: 2em;
     }
+
+    .container > a > .button {
+        margin-bottom: 2.5em;
+    }
 }
 
 .container > a > div.button:hover {
@@ -338,8 +342,16 @@ main {
     color: #23153C;
 }
 
+.container > a > div.button > img.icon-fb-hover {
+    display: none;
+}
+
 .container > a > div.button:hover > img.icon-fb {
-    content: url(./img/iconFacebookDark.svg);
+    display: none;
+}
+
+.container > a > div.button:hover > img.icon-fb-hover {
+    display: block;
 }
 
 .container > a > div.button:hover > img.icon-git {
