@@ -107,8 +107,8 @@ main {
 
 .hamburger span {
     display: block;
-    width: 33px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     margin-bottom: 5px;
     position: relative;
     background-color: #FF3F81;
@@ -123,11 +123,11 @@ main {
 }
 
 .hamburger.is-active span:nth-child(1) {
-    transform: rotate(45deg) ;
+    transform: rotate(45deg);
 }
 
 .hamburger.is-active span:nth-child(3) {
-    transform: rotate(-45deg) translate(-5px, 1px) ;
+    transform: rotate(-45deg) translate(-2.5px, 0px) ;
 }
 
 .hamburger.is-active span:nth-child(2) {
@@ -275,7 +275,33 @@ main {
 
 /* content style works */
 
+.worksContent a {
+    display:flex; 
+    color: #fefcfb; 
+    font-size: 5em; 
+    align-items: center;  
+    justify-content: center; 
+    margin: auto; 
+    padding-top: 50px; 
+    padding-bottom: 30px;
+}
 
+.worksContent img {
+    display: flex; 
+    align-items: center;  
+    justify-content: center; 
+    width: 279px; 
+    height: 261px; 
+    margin: auto; 
+    margin-top: 5em; 
+    margin-bottom: 5em;
+}
+
+@media screen and (max-width: 768px){
+    .worksContent a {
+        font-size: 3em;
+    }
+}
 
 /* content style contact */
 
