@@ -228,6 +228,7 @@ main {
     height: 12em;
     border-radius: 100%;
     border: 2.5px solid #fefcfb;
+    box-shadow: #FF3F81 ;
     justify-content: center; 
     justify-items: center;
     align-items: center;
@@ -405,5 +406,9 @@ footer {
     font-size: small;
     padding-top: 6px;
     font-weight: 100%;
+    color: #fefcfb;
+}
+
+.footerContent a {
     color: #fefcfb;
 }
