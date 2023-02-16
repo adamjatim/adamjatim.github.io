@@ -13,14 +13,14 @@
 
 
 # Dekstop view
-<img alt="dekstop-page" width="100%" src="/.img/Screenshot%202023-02-17%20at%2002-50-24%20Home.png"/>
+<img alt="dekstop-page" width="100%" src="/img-git/Screenshot%202023-02-17%20at%2002-50-24%20Home.png"/>
 <br>
-<img alt="dekstop-page" width="100%" src="/.img/Screenshot%202023-02-17%20at%2002-50-41%20About.png"/>
+<img alt="dekstop-page" width="100%" src="/img-git/Screenshot%202023-02-17%20at%2002-50-41%20About.png"/>
 <br>
-<img alt="dekstop-page" width="100%" src="/.img/Screenshot%202023-02-17%20at%2002-50-53%20Contact.png"/>
+<img alt="dekstop-page" width="100%" src="/img-git/Screenshot%202023-02-17%20at%2002-50-53%20Contact.png"/>
 <br>
 
 # Mobile view
-<img alt="mobile-page" width="100%" src="/.img/Screenshot%202023-02-17%20at%2002-51-20%20Contact.png" />
+<img alt="mobile-page" width="100%" src="/img-git/Screenshot%202023-02-17%20at%2002-51-20%20Contact.png" />
 <br>
-<img alt="mobile-page" width="100%" src="/.img/Screenshot%202023-02-17%20at%2002-51-34%20About.png" />
+<img alt="mobile-page" width="100%" src="/img-git/Screenshot%202023-02-17%20at%2002-51-34%20About.png" />
